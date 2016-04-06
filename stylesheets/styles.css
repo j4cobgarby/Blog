@@ -351,3 +351,25 @@ footer {
     color:#444;
   }
 }
+
+span.highlight {
+    border-radius: 3px;
+    padding: 2px;
+    margin: 4px;
+}
+
+span.red {
+    background-color: #EB7F54;
+}
+
+span.orange {
+    background-color: #EBB654;
+}
+
+span.yellow {
+    background-color: #EBEB54;
+}
+
+span.green {
+    background-color: #A0EB54;
+}
