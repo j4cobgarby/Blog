@@ -1,13 +1,14 @@
 <!doctype html>
 <html>
   <head>
-      
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600|Lora:400,700|Montserrat:400,700|Roboto+Slab:400,700,300|Playfair+Display:900,400' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Project blog</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
+      
     <link rel="stylesheet" href="stylesheets/github-light.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,21 +31,28 @@
           <h3>Planned features:</h3>
           <h4>Dungeon game:</h4>
           <ul>
-              <li><span class="highlight green"><b>Collisions</b> with dungeon walls</span></li>
+              <li><span class="highlight green"><b>Collisions</b> with dungeon walls</span> &beta; 0.02</li>
               <li><span class="highlight orange">Ability for player to <b>pickup coins</b> to gain score.</span></li>
-              <li><span class="highlight green"><b>Health and mana</b> for the player, and bars to display each.</span> &alpha; 0.04</li>
-              <li><span class="highlight red">Health/mana <b>potions</b> around the map.</span></li>
+              <li><span class="highlight green"><b>Health and mana</b>, and bars to display each.</span> &alpha; 0.04</li>
+              <li><span class="highlight orange">Health/mana <b>potions</b> around the map.</span></li>
               <li><span class="highlight red"><b>Scary monsters</b> moving around the dungeon.</span></li>
               <li><span class="highlight red">A range of <b>spells</b> for the player to cast.</span></li>
               <li><span class="highlight red">Spike <b>traps</b> and the like in the dungeon.</span></li>
-              <li><span class="highlight orange">Working <b>keys</b> and doors with keyholes.</span></li>
+              <li><span class="highlight green">Working <b>keys</b> and doors with keyholes.</span> &beta; 0.03</li>
               <li><span class="highlight red">Many many <b>more levels</b>.</span></li>
           </ul>
           <hr>
-          <h2>Dungeon Project - Update 4: Collisions finally working!</h2>
-          <h2 style="font-size: 15px">11/ 04/ 2016 | &beta; 0.02</h2>
+          <h2>Dungeon Project - Update 5: Keys and Keyholes!</h2>
+          <h2 style="font-size: 15px">12 / 04 / 2016 | &beta; 0.03</h2>
           <br>
-          <p>I'm not sure why this update took so long to release - mainly because there were a lot of bugs. Anyway, <b>beta 0.02 has finally been released!</b> This update doesn't add a lot (as it's based on an entire rewrite of the code). In this rewrite I completely rearranged the classes (moving level functions from <code>Player</code> to a new class called <code>Level</code>.) Also (not showing in the jar file), I've started to develop a system for keys, which will open the locks. The download's below, although it's not really the most interesting game right now.</p>
+          <img src="images/keysdemo.JPG"><br><br>
+          <p>This probably would've been released yesterday, soon after b0.02. However, I couldn't get it to stop crashing when a door was opened, as deleting the cell and then trying to render it threw a NullPointerException. An easy fix for this was to create a layer below the floor with the same texture as the actual floor, and a try-catch around the rendering. Anyway, the game is <i>almost</i> playable! Next, I'll add functionality to the exit door, work on the coins and scoring, and refine my code. As (almost) always, if you want to play it in it's current stage, the download is below!</p>
+          <a href="downloads/dungeon_versions/beta/dungeon_b0.03.jar" class="download">Download &beta; 0.03</a><br><br>
+          <hr>
+          <h2>Dungeon Project - Update 4: Collisions finally working!</h2>
+          <h2 style="font-size: 15px">11/ 04 / 2016 | &beta; 0.02</h2>
+          <br>
+          <p>I'm not sure why this update took so long to release - mainly because there were a lot of bugs. Anyway, <b>beta 0.02 has finally been released!</b> This update doesn't add a lot (as it's based on an entire rewrite of the code). In this rewrite I completely rearranged the classes (moving level functions from Player to a new class called Level.) Also (not showing in the jar file), I've started to develop a system for keys, which will open the locks. The download's below, although it's not really the most interesting game right now.</p>
           <a href="downloads/dungeon_versions/beta/dungeon_beta_0.02.jar" class="download">Download &beta; 0.02</a></p>
           <hr>
           <h2>Dungeon Project - Update 3: Collisions soon to work.</h2>
