@@ -35,12 +35,22 @@
               <li><span class="highlight green">Ability for player to <b>pickup coins</b> to gain score.</span> &beta; 0.04</li>
               <li><span class="highlight green"><b>Health and mana</b>, and bars to display each.</span> &alpha; 0.04</li>
               <li><span class="highlight green">Health/mana <b>potions</b> around the map.</span> &beta; 0.05</li>
-              <li><span class="highlight red"><b>Scary monsters</b> moving around the dungeon.</span></li>
+              <li><span class="highlight orange"><b>Scary monsters</b> moving around the dungeon.</span></li>
               <li><span class="highlight red">A range of <b>spells</b> for the player to cast.</span></li>
-              <li><span class="highlight orange">Spike <b>traps</b> and the like in the dungeon.</span></li>
+              <li><span class="highlight green">Spike <b>traps</b> and the like in the dungeon.</span> &beta; 0.06</li>
               <li><span class="highlight green">Working <b>keys</b> and doors with keyholes.</span> &beta; 0.03</li>
               <li><span class="highlight green">Many many <b>more levels</b>.</span> &beta; 0.05</li>
           </ul>
+          <hr>
+          <h2>Dungeon Project - Update 8: Static and Moving spikes!</h2>
+          <h2 style="font-size: 15px">20 / 04 / 2016 | &beta; 0.06</h2>
+          <br>
+          <p>First of all - sorry for the delayed update! I couldn't manage to get the spikes to work the way which I originally intended to. Anyway, I've worked around this, so they are finally working. The static spikes weren't the problem as much as the moving ones. I assumed it would be easy to swap around tiles in the TileMap, and therefore be able to have a timer inverting it's current state, but it turns out that actually this isn't too easy (it usually would be, but I've made my TileMap slightly different) and so I had to create a new layer for each of the two current levels, which would hold the second stages of the spikes, then on the timer swap between which of these layers it renders, and in the collisions, I checked if the character was touching a spike dependant on the layer of spikes which it was actually rendering.<br>
+          Anyway, if you want to download it, you can!<br><br>
+          <a href="downloads/dungeon_versions/beta/dungeon_b0.06.jar" class="download">Download &beta; 0.05</a><br><br>
+          Also, the next update will add monsters! Which will probably be the 'best' update yet, but also will - most likely - take quite a while to release! Hopefully it'll be worth the wait though! The next update will probably come out of beta (so, release 1! Or if you prefer, simply - '1')!
+          </p>
+          
           <hr>
           <h2>Dungeon Project - Update 7: More levels!</h2>
           <h2 style="font-size: 15px">16 / 04 / 2016 | &beta; 0.05</h2>
